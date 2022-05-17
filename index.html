@@ -1,0 +1,81 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/chief-slider.min.css">
+    <script defer src="main.js"></script>
+    <script defer src="chief-slider.min.js"></script>
+    <title>Котятки</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="wrapper">
+                <img class='header_img'src="assets/3500_3_01.jpg" alt="cat">
+                <p>Милые котята</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="slider">
+            <p id="cat_titile">Уставший котик</p>
+            <div class="slider__wrapper">
+                
+              <div class="slider__items">
+                
+                <div class="slider__item">
+                  <!-- Контент 1 слайда -->
+                  <img src="assets/1cat.jpg" alt="">
+                </div>
+                <div class="slider__item">
+                  <!-- Контент 2 слайда -->
+                  
+                  <img src="assets/2cat.jpg" alt="">
+                </div>
+                <div class="slider__item">
+                  <!-- Контент 3 слайда -->
+                  <img src="assets/3cat.jpg" alt="">
+                </div>
+                <div class="slider__item">
+                  <!-- Контент 4 слайда -->
+                  
+                  <img src="assets/4cat.jpg" alt="">
+                </div>
+                <div class="slider__item">
+                  <!-- Контент 5 слайда -->
+                  <img src="assets/5cat.jpg" alt="">
+                </div>
+                <div class="slider__item">
+                    <!-- Контент 5 слайда -->
+                    <img src="assets/6cat.jpg" alt="">
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="slider__control" data-slide="prev"></a>
+            <a href="#" class="slider__control" data-slide="next"></a>
+            <ol class="slider__indicators">
+              <li data-slide-to="0"></li>
+              <li data-slide-to="1"></li>
+              <li data-slide-to="2"></li>
+              <li data-slide-to="3"></li>
+              <li data-slide-to="4"></li>
+              <li data-slide-to="5"></li>
+            </ol>
+    </section>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const slider = new ChiefSlider('.slider', {
+            loop: true,
+            autoplay: true,
+            interval: 4000,
+          });
+        });
+      </script>
+</body>
+</html>
