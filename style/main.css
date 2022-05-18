@@ -8,6 +8,12 @@
     font-size: 16px;
     box-sizing: border-box;
     color: black;
+    -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
 
 .header{
@@ -65,7 +71,7 @@
   font-size: 7rem;
 }
 
-/* .slider__item:nth-child(1) {
+.slider__item:nth-child(1) {
   background-color: #f44336;
 }
 
@@ -87,5 +93,5 @@
 
 .slider__item:nth-child(6) {
     background-color: #777777;
-} */
+}
 
